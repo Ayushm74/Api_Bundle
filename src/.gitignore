@@ -1,4 +1,0 @@
-# ignore env files
-.env
-*.local
-secrets.json
