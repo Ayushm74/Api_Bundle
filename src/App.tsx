@@ -7,9 +7,10 @@ const App: React.FC = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       {!showUnsplash ? (
+
         <>
-          <h1>🎨 Welcome to My React App</h1>
-          <p>Click below to explore random images from Unsplash!</p>
+          <h1> Welcome to My React App</h1>
+          <p>Click below to explore images from Unsplash!</p>
           <button
             onClick={() => setShowUnsplash(true)}
             style={{
