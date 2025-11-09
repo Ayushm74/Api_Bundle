@@ -10,7 +10,7 @@ const NewMain: React.FC = () => {
       {!showApp ? (
         <>
           <h1>Welcome to the New Main Page</h1>
-          <p>This is your new entry point for the app.</p>
+          <p>This is your new entry point the app.</p>
           <button onClick={() => setShowApp(true)}>Go to Old Main Page</button>
         </>
       ) : (
