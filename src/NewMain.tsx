@@ -1,16 +1,16 @@
 // src/NewMain.tsx
-import React from "react";
+import React, { useState } from "react";
 import App from "./App";
 
-const NewMain: React.FC = () => {
-  const [showApp, setShowApp] = React.useState(false);
+const NewMain = () => {
+  const [showApp, setShowApp] = useState(false);
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       {!showApp ? (
         <>
           <h1>Welcome to the New Main Page</h1>
-          <p>This is your new entry point the app.</p>
+          <p>This is your new entry point to the app.</p>
           <button onClick={() => setShowApp(true)}>Go to Old Main Page</button>
         </>
       ) : (
