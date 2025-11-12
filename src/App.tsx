@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UnsplashPage from "./UnsplashPage";
+import UnsplashPage from "./pages/UnsplashPage";
 
 const App: React.FC = () => {
   const [showUnsplash, setShowUnsplash] = useState(false);
