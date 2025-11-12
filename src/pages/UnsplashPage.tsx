@@ -12,6 +12,7 @@ interface UnsplashImage {
 const UnsplashPage: React.FC = () => {
   const [image, setImage] = useState<UnsplashImage | null>(null);
 
+  // Fetch random image from Unsplash
   const fetchRandomImage = async () => {
     try {
       const response = await axios.get<UnsplashImage>(
@@ -29,6 +30,7 @@ const UnsplashPage: React.FC = () => {
     }
   };
 
+  // Automatically fetch new image every 3 seconds
   useEffect(() => {
     console.log("🔄 Fetching image...");
     fetchRandomImage();

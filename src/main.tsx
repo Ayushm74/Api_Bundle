@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import NewMain from "./NewMain"; // <-- import new page
+import App from "./App";
 import "./index.css";
 
+// Create root and render main App
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <NewMain />
+    <App />
   </React.StrictMode>
 );
